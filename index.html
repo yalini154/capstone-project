@@ -4,25 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> 
+    <style>
+        h1{
+            text-align: center;
+            color: #45596c;
+        }
+        p{
+            text-align: center;
+            color: lightslategrey;
+        }
         body{
             margin: 0;
             font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
         }
         .topnav{
             overflow: hidden;
-            background-color: rgb(211, 251, 251);
+            background-color: #dde9fb;
         }
         .topnav a{
             float: left;
-            color: hsl(195, 57%, 29%);
+            color: rgb(69, 84, 128);
             text-align: center;
             padding: 14px 16px;
             font-size: 17px;
         }
         .topnav a:hover{
-           background-color: rgb(107, 210, 225);
-           color: aliceblue;
+           background-color: #a4bbdc;
+           color: rgb(240, 241, 255);
         }
     </style>
 </head>
@@ -33,11 +41,24 @@
         <a href="#"> gallery </a>
         <a href="#"> contact </a>
     </div>
-    <h1> furina </h1>
-    <img src="https://i.pinimg.com/originals/5d/18/91/5d18912068b5883aa7ad4a7ba1791e85.jpg" width="400"> 
-    <p> Furina de Fontaine[1][2] is a playable Hydro character in Genshin Impact who can alternate between Pneuma and Ousia
-    alignments.
-    Introduced as the flamboyant and overconfident Hydro Archon, Furina's theatrics are eventually revealed to be a public
-    persona, which she later discards in favor of living a relatively humbler life as an actress and artistic consultant.</p>
+    <h1> shenhe </h1>
+    <center> <img src="Shenhe_Icon.webp" width="400"> </center>
+    <p> Shenhe (Chinese: 申鹤 Shēnhè) is a playable Cryo character in Genshin Impact.
+    The daughter of an unnamed exorcist couple, Shenhe was taken in and raised by Cloud Retainer as a disciple following a
+    traumatic incident instigated by Shenhe's father during her childhood. </p>
+    <script>
+        var a = 0;
+        carousel();
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("topnav");
+            for(i = 0; i < x.length; i++){
+                a ++;
+            }
+            if(a > x.length == "block"){
+                x = x + 1;
+            }
+        }
+    </script>
 </body>
 </html>
